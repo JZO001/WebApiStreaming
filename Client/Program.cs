@@ -33,7 +33,6 @@ namespace Client
             {
                 using (HttpClient httpClient = new HttpClient())
                 {
-                    // not sure, if this is necessary at streaming
                     //httpClient.Timeout = Timeout.InfiniteTimeSpan;
                     using (HttpResponseMessage response = await httpClient.SendAsync(request, HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false))
                     {

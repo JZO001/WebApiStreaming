@@ -38,7 +38,9 @@ namespace Service.Controllers
             {
                 foreach (WeatherForecast item in list)
                 {
+                    // Thread.Sleep simulates a long running process, which generates some kind of output
                     Thread.Sleep(1000);
+
                     await sw.WriteLineAsync(item.ToString()).ConfigureAwait(false);
                     await sw.FlushAsync().ConfigureAwait(false);
                 }
