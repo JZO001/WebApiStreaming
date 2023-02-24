@@ -1,4 +1,4 @@
-# WebApi Streaming
+# WebAPI Streaming
 How to get data as a stream from a WebAPI (.NET)
 
 A remote web API can be consumed as a stream, which can take longer,
